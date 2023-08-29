@@ -40,6 +40,7 @@ import {
   Users,
 } from "lucide-react";
 import "./global.css";
+import { DialogClose } from "@radix-ui/react-dialog";
 
 export function App() {
   return (
@@ -68,7 +69,9 @@ export function App() {
           </div>
 
           <DialogFooter>
-            <Button type="submit">Save changes</Button>
+            <DialogClose asChild>
+              <Button type="submit">Save changes</Button>
+            </DialogClose>
           </DialogFooter>
         </DialogContent>
       </Dialog>
