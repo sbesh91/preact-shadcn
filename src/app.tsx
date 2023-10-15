@@ -41,6 +41,12 @@ import {
 } from "lucide-react";
 import "./global.css";
 import { DialogClose } from "@radix-ui/react-dialog";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "./components/ui/tooltip";
 
 export function App() {
   return (
@@ -65,6 +71,7 @@ export function App() {
             >
               Accept terms and conditions
             </label>
+
             <DropdownMenuDemo />
           </div>
 
